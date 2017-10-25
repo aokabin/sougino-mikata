@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>葬儀のミカタ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">holy IE</p>
+        <![endif]-->
+        <div class="wrap">
+            <header class="main-header">
+                <h1 class="main-logo">
+                    <a href="index.html">葬儀のミカタ</a>
+                </h1>
+            </header>
+            <main class="top">
+                <form action="search.html" method="get">
+                    <div class="form-group">
+                        <label for="input-place">場所</label>
+                        <input type="text" name="place" id="input-place">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-style">葬儀の形式</label>
+                        <input type="text" name="style" id="input-style">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-price">予算</label>
+                        <input type="text" name="price" id="input-price">
+                    </div>
+                    <div class="btn-area">
+                        <button type="submit">検索</button>
+                    </div>
+                </form>
+            </main>
+            <div style="margin-top: 2rem;"><a href="compare.html" style="border: 1px solid cornflowerblue; padding: .2rem; color: white; background: cornflowerblue">比較するぞ</a></div>
+        </div>
+        <!--scripts-->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="plugins.js"></script>
+        <script src="main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

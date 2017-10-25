@@ -1,0 +1,34 @@
+main.compare{;
+}
+table.compare-table{
+    border-radius: 2px;
+    border: 2px solid #ccc;
+}
+
+table.compare-table ul li{
+    list-style: inside;
+}
+table.compare-table,
+table.compare-table th,
+table.compare-table td{
+    border:solid 2px #ccc;
+    padding: .4rem .2rem;
+}
+
+table.compare-table th{
+    min-width: 100px;
+    font-weight: bold;
+    background-color: #b22b4d;
+    color: white;
+}
+table.compare-table td{
+    width: 120px;
+    white-space: nowrap; /*文字折り返し禁止*/
+    overflow: auto;
+}
+tr.row-check td{
+    text-align: center;
+}
+tr.row-button td{
+    text-align: center;
+}
