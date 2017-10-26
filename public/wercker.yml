@@ -1,0 +1,15 @@
+box: debian
+
+build:
+  steps:
+    - script:
+        name: update apt 
+        code: sudo apt-get update && apt-get -y install curl
+
+deploy:
+  steps:
+     - s3sync:
+         key_id: $AWS_ACCESS_KEY_ID
+         key_secret: $AWS_SECRET_ACCESS_KEY
+         bucket_url: s3://sougi-no-mikata
+         source_dir: /
