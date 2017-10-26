@@ -1,0 +1,124 @@
+main.compare{
+}
+header{
+    padding: .6rem;
+    background-color: #928B3D;
+    color: white;
+}
+header h2{
+    text-align: center;
+    margin-bottom: .1rem;
+    font-weight: bold;
+    color: inherit;
+}
+header .search-item-cnt{
+    text-align: center;
+    color: inherit;
+    margin-bottom: .6rem;
+}
+/* 検索値表示 */
+ul.search-param-list{
+    display: flex;
+    height:inherit;
+    justify-content: center;
+    align-items: center;
+}
+ul.search-param-list li{
+    color: white;
+    margin-right: 1rem;
+}
+/* ソートボタン */
+ul.plan-sort-btn-list{
+    padding:.3rem 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.plan-sort-btn-list li{
+    flex: 1;
+    text-align: center;
+    padding: .3rem;
+    cursor: pointer;
+}
+ul.plan-sort-btn-list li:not(:last-child){
+    margin-right: .3rem;
+}
+
+ul.plan-sort-btn-list li input{
+    display: none;
+}
+
+ul.plan-sort-btn-list li label{
+    border:1px solid #928B3D;
+    font-size: .9rem;
+    border-radius: 1rem;
+    display: block;
+    padding: .4rem 0;
+    color: #928B3D;
+    transition: background-color .2s ease,
+                color .2s ease;
+}
+
+ul.plan-sort-btn-list li input:checked + label{
+    background-color: #928B3D;
+    color: white;
+}
+
+section.search-result{
+    padding: 1.4rem;
+}
+ul.search-result-list li{
+    border:2px solid #ddd;
+    border-radius: 12px;
+}
+ul.search-result-list li a{
+    display: block;
+}
+
+.check-area{
+    background-color: #EACE0A;
+    padding:.5rem 0;
+    border-radius: 12px 12px 0 0 ;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4.price{
+    color: #f98e00;
+}
+h4.price span{
+    font-size: .6rem;
+}
+.review-cnt{
+    color: #eddc64;
+    font-size: 1.1rem;
+}
+span.review-title{
+    font-size: .8rem;
+    font-weight: bold;
+}
+a.review-href{
+    text-decoration: underline;
+    color: dodgerblue;
+}
+ul.search-result-list h2,
+ul.search-result-list h3,
+ul.search-result-list h4,
+ul.search-result-list h5{
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+ul.search-result-list li{
+}
+.item-top-area{
+    display: flex;
+}
+
+.item-top-area img{
+    width: 90px;
+    height: 90px;
+}

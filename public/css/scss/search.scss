@@ -1,0 +1,196 @@
+@charset "utf-8";
+main.compare {
+}
+
+header {
+    padding: .6rem;
+    background-color: #928B3D;
+    color: white;
+    h2 {
+        text-align: center;
+        margin-bottom: .1rem;
+        font-weight: bold;
+        color: inherit;
+    }
+    .search-item-cnt {
+        text-align: center;
+        color: inherit;
+        margin-bottom: .6rem;
+    }
+
+}
+
+/* 検索値表示 */
+ul.search-param-list {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    li {
+        color: white;
+        margin-right: 1rem;
+    }
+}
+
+/* ソートボタン */
+ul.plan-sort-btn-list {
+    padding: .3rem 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        flex: 1;
+        text-align: center;
+        padding: .3rem;
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: .3rem;
+        }
+        input {
+            display: none;
+        }
+        label {
+            border: 1px solid #928B3D;
+            font-size: .9rem;
+            border-radius: 1rem;
+            display: block;
+            padding: .4rem 0;
+            color: #928B3D;
+            transition: background-color .2s ease,
+            color .2s ease;
+        }
+        input:checked + label {
+            background-color: #928B3D;
+            color: white;
+        }
+    }
+
+}
+
+section.search-result {
+    padding: 1.4rem;
+}
+
+ul.search-result-list{
+    li {
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+}
+
+.check-area {
+    border-bottom: 1px solid #ccc;
+    input{
+        display: none;
+    }
+    label{
+        display: block;
+        padding: .5rem 0;
+
+        color: #ccc;
+        background-color: white;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color .2s ease,
+        color .2s ease;
+    }
+    input:checked + label {
+        background-color: #EACE0A;
+        color: white;
+    }
+}
+
+ul.search-result-list{
+    h2, h3, h4, h5 {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+.plan-info{
+    height: 100%;
+    padding: 1rem;
+}
+
+.item-top-area {
+    display: flex;
+    align-items: center;
+    img {
+        width: 90px;
+        height: 90px;
+    }
+    .price-area{
+        flex:auto;
+        padding-left: 2.2rem;
+        .price{
+            color: #f98e00;
+            font-size: 1.4rem;
+            margin-bottom: .4rem;
+            &::after{
+                content: "(税込)";
+                display: inline-block;
+                font-size: .8rem;
+                color: #f98e00;
+            }
+        }
+        .review-cnt {
+            color: #eddc64;
+            font-size: 1.2rem;
+        }
+        .review-title {
+            font-size: .7rem;
+            font-weight: bold;
+        }
+        .review-href {
+             text-decoration: underline;
+             color: dodgerblue;
+         }
+    }
+}
+
+.company-info{
+    margin-top: 1rem;
+    background-color: #f9f7ea;
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    .left{
+        flex:auto;
+        .company-name{
+            display: flex;
+            align-items: center;
+            height: 35px;
+            font-size: 1.4rem;
+            margin-bottom: .7rem;
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin-right: .7rem;
+
+                background: url("../img/icon1.svg") center no-repeat;
+            }
+        }
+        .plan-name{
+            padding-left: 2rem;
+            font-size: 1rem;
+        }
+    }
+    .right{
+        padding-top: .3rem;
+        .detail-link{
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #f9b02d;
+            color: white;
+            margin-right: .4rem;
+            font-weight: bold;
+        }
+    }
+}
