@@ -1,34 +1,123 @@
-main.compare{;
+main.compare{
 }
-table.compare-table{
-    border-radius: 2px;
-    border: 2px solid #ccc;
+header{
+    height: 40px;
+    background-color: #928B3D;
+}
+/* 検索値表示 */
+ul.search-param-list{
+    display: flex;
+    height:inherit;
+    justify-content: center;
+    align-items: center;
+}
+ul.search-param-list li{
+    color: white;
+    margin-right: 1rem;
+}
+/* ソートボタン */
+ul.plan-sort-btn-list{
+    padding:.3rem 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.plan-sort-btn-list li{
+    flex: 1;
+    text-align: center;
+    padding: .3rem;
+    cursor: pointer;
+}
+ul.plan-sort-btn-list li:not(:last-child){
+    margin-right: .3rem;
 }
 
-table.compare-table ul li{
-    list-style: inside;
-}
-table.compare-table,
-table.compare-table th,
-table.compare-table td{
-    border:solid 2px #ccc;
-    padding: .4rem .2rem;
+ul.plan-sort-btn-list li input{
+    display: none;
 }
 
-table.compare-table th{
-    min-width: 100px;
-    font-weight: bold;
-    background-color: #b22b4d;
+ul.plan-sort-btn-list li label{
+    border:1px solid #928B3D;
+    font-size: .9rem;
+    border-radius: 1rem;
+    display: block;
+    padding: .4rem 0;
+    color: #928B3D;
+    transition: background-color .2s ease,
+                color .2s ease;
+}
+
+ul.plan-sort-btn-list li input:checked + label{
+    background-color: #928B3D;
     color: white;
 }
-table.compare-table td{
-    width: 120px;
-    white-space: nowrap; /*文字折り返し禁止*/
+
+.compare-table-area{
+    display: flex;
+}
+
+.compare-table-area .col{
+    display: flex;
+    flex-basis: 170px;
+    min-width:170px;
+    max-width: 170px;
+    flex-direction: column;
+    border:2px solid #ddd;
+    border-radius: 12px;
+}
+.col .check-area{
+    background-color: #EACE0A;
+    padding:.5rem 0;
+    border-radius: 12px 12px 0 0 ;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.col .row{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #EDDC64;
+}
+.col .row:not(:nth-of-type(1)){
+    padding: .8rem;
+}
+.row h2,
+.row h3,
+.row h4,
+.row h5{
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.row h4 ~ div{
+    line-height: 1.6;
+    font-size: .8rem;
+}
+h4.price{
+    color: #f98e00;
+}
+h4.price span{
+    font-size: .6rem;
+}
+.review-cnt{
+    color: #eddc64;
+    font-size: 1.1rem;
+}
+span.review-title{
+    font-size: .8rem;
+    font-weight: bold;
+}
+a.review-href{
+    text-decoration: underline;
+    color: dodgerblue;
+}
+.row h3{
+    font-weight:normal;
+    font-size: .8rem;
+}
+div.compare-table{
+    border-radius: 2px;
     overflow: auto;
-}
-tr.row-check td{
-    text-align: center;
-}
-tr.row-button td{
-    text-align: center;
 }
