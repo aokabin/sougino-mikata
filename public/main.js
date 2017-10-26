@@ -70,3 +70,7 @@ var data = {
    ]
 };
 riot.mount('compare', data);
+riot.mount('search', data);
+riot.mount('filter', data);
+riot.mount('entry', data);
+riot.mount('confirm', data);
