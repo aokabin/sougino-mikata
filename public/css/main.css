@@ -1,0 +1,14 @@
+header.main-header{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid #ddd;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    font-weight: bold;
+}
+h1.main-logo{
+    font-size: 20px;
+    padding-left: 1rem;
+}
