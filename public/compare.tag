@@ -71,54 +71,17 @@
     this.items = opts.items
     this.shown_items = JSON.parse(JSON.stringify(opts.items))
 
-    getItem(idx) {
-
-        return 
-    }
-
-    this.items = opts.items
-
-    edit(e) {
-      this.text = e.target.value
-    }
-
-    add(e) {
-      if (this.text) {
-        this.items.push({ title: this.text })
-        this.text = this.refs.input.value = ''
-      }
-      e.preventDefault()
-    }
-
-    removeAllDone(e) {
-      this.items = this.items.filter(function(item) {
-        return !item.done
-      })
-    }
-
-    // an two example how to filter items on the list
-    whatShow(item) {
-      return !item.hidden
-    }
-
-    onlyDone(item) {
-      return item.done
-    }
-
     hide(e) {
         var checked_item = e.item
         checked_item.show = !checked_item.show
         this.shown_items = this.shown_items.filter(function(item) {
             return item.show
         })
-        console.log(this.shown_items);
-        console.log(this.items);
         return true
     }
 
     reset(e){
         this.shown_items = opts.items
-        console.log(this.shown_items)
     }
 
   </script>
