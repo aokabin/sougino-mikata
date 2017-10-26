@@ -1,8 +1,14 @@
 main.compare{
 }
 header{
-    height: 40px;
+    padding: .6rem;
     background-color: #928B3D;
+}
+header h2{
+    text-align: center;
+    margin-bottom: .4rem;
+    font-weight: bold;
+    color: white;
 }
 /* 検索値表示 */
 ul.search-param-list{
@@ -15,44 +21,8 @@ ul.search-param-list li{
     color: white;
     margin-right: 1rem;
 }
-/* ソートボタン */
-ul.plan-sort-btn-list{
-    padding:.3rem 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-ul.plan-sort-btn-list li{
-    flex: 1;
-    text-align: center;
-    padding: .3rem;
-    cursor: pointer;
-}
-ul.plan-sort-btn-list li:not(:last-child){
-    margin-right: .3rem;
-}
-
-ul.plan-sort-btn-list li input{
-    display: none;
-}
-
-ul.plan-sort-btn-list li label{
-    border:1px solid #928B3D;
-    font-size: .9rem;
-    border-radius: 1rem;
-    display: block;
-    padding: .4rem 0;
-    color: #928B3D;
-    transition: background-color .2s ease,
-                color .2s ease;
-}
-
-ul.plan-sort-btn-list li input:checked + label{
-    background-color: #928B3D;
-    color: white;
-}
-
 .compare-table-area{
+    padding: 1rem 0 0 .3rem;
     display: flex;
 }
 
@@ -64,6 +34,7 @@ ul.plan-sort-btn-list li input:checked + label{
     flex-direction: column;
     border:2px solid #ddd;
     border-radius: 12px;
+    margin-right: .1rem;
 }
 .col .check-area{
     background-color: #EACE0A;
@@ -120,4 +91,12 @@ a.review-href{
 div.compare-table{
     border-radius: 2px;
     overflow: auto;
+}
+.item-top-area img{
+    width: 200px;
+    height: 200px;
+}
+
+.item-top-area {
+    width: 160px;
 }
