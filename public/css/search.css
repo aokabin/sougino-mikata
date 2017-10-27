@@ -156,7 +156,9 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #ddd;
+  background-color: white;
+  z-index: 10; }
   footer i {
     display: inline-block;
     width: 1rem;

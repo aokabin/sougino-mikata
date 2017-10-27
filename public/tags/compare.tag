@@ -3,7 +3,7 @@
 
 <div class="wrap">
     <header>
-        <h2>比較</h2><button onclick={ reset }>リセット</button>
+        <h2>比較</h2>
         <ul class="search-param-list">
             <li>愛知県</li>
             <li>名古屋市</li>
@@ -23,6 +23,9 @@
                         <div class="company-info row">
                             <h2 class="company-name">{ name }</h2>
                             <h3 class="plan-name">{ subtitle }</h3>
+                        </div>
+                        <div class="reserve row">
+                            <a href="detail.html">詳細・予約</a>
                         </div>
                         <div class="price-area row">
                             <h4 class="price">{ price }</h4>
@@ -57,6 +60,9 @@
             </div>
         </form>
     </main>
+    <footer class="reset-btn-area">
+        <button class="reset-btn" onclick={ reset }><i class="icon"></i>リセット</button>
+    </footer>
 </div>
 
   <script>
