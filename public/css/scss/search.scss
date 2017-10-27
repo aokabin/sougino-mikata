@@ -17,18 +17,20 @@ header {
         color: inherit;
         margin-bottom: .6rem;
     }
-
 }
 
 /* 検索値表示 */
 ul.search-param-list {
     display: flex;
-    height: inherit;
+    height:inherit;
     justify-content: center;
     align-items: center;
-    li {
+    li{
         color: white;
-        margin-right: 1rem;
+        font-size: .9rem;
+        &:not(:last-child){
+            margin-right: .8rem;
+        }
     }
 }
 
@@ -192,5 +194,32 @@ ul.search-result-list{
             margin-right: .4rem;
             font-weight: bold;
         }
+    }
+}
+footer{
+    padding: .5rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    i{
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background: url('../img/un-checkmark.svg') center no-repeat;
+        margin-right: .2rem;
+    }
+    button{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+
+        background-color: #928B3D;
+        padding: .4rem 3rem;
+        font-size:1rem;
+        color: white;
+        border: none;
+        border-radius: 2rem ;
     }
 }

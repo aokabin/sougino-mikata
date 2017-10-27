@@ -63,6 +63,20 @@ ul.search-param-list {
   line-height: 1.6;
   font-size: .8rem; }
 
+.company-name {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  font-size: 1.4rem;
+  margin-bottom: .7rem; }
+  .company-name::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: .7rem;
+    background: url("../img/icon1.svg") center no-repeat; }
+
 .price-area {
   flex: auto;
   padding-left: 2.2rem; }

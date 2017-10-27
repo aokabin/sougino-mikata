@@ -21,7 +21,9 @@ ul.search-param-list {
   align-items: center; }
   ul.search-param-list li {
     color: white;
-    margin-right: 1rem; }
+    font-size: .9rem; }
+    ul.search-param-list li:not(:last-child) {
+      margin-right: .8rem; }
 
 /* ソートボタン */
 ul.plan-sort-btn-list {
@@ -147,5 +149,29 @@ ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul
       color: white;
       margin-right: .4rem;
       font-weight: bold; }
+
+footer {
+  padding: .5rem 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd; }
+  footer i {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../img/un-checkmark.svg") center no-repeat;
+    margin-right: .2rem; }
+  footer button {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #928B3D;
+    padding: .4rem 3rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 2rem; }
 
 /*# sourceMappingURL=search.css.map */
