@@ -73,9 +73,9 @@ ul.search-result-list li {
     font-weight: bold;
     text-align: center;
     transition: background .2s ease, color .2s ease; }
-  .check-area input:checked + label {
-    background: #EACE0A url("../img/checkmark.svg") center/23px 23px no-repeat;
-    color: white; }
+    .check-area label.checked {
+      background: #EACE0A url("../img/checkmark.svg") center/23px 23px no-repeat;
+      color: white; }
 
 ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul.search-result-list h5 {
   font-weight: bold;
