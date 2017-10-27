@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+//vars
+$header-img-height: 40px;
+
+header.main-header{
+    //height: $header-height;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid #666;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    font-weight: bold;
+    h1.main-logo{
+        padding-right: 1rem;
+        border-right:1px solid #222;
+        flex: 1.2;
+        a{
+            img{
+            }
+        }
+    }
+    .call-to{
+        flex:1;
+        padding-left: 1.2rem;
+        img{
+            //height: $header-img-height;
+        }
+    }
+}
