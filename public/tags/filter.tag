@@ -1,6 +1,8 @@
 
 <filter>
 
+    <div each={  }>
+
     <div each={ shown_items }>
         <input type="checkbox" checked={ show } onclick={ parent.hide } >
         <h1>{ title }</h1>
@@ -67,22 +69,7 @@
     </main>
 
   <script>
-    this.companies = opts.companies
-    this.items = opts.items
-    this.shown_items = JSON.parse(JSON.stringify(opts.items))
-
-    hide(e) {
-        var checked_item = e.item
-        checked_item.show = !checked_item.show
-        this.shown_items = this.shown_items.filter(function(item) {
-            return item.show
-        })
-        return true
-    }
-
-    reset(e){
-        this.shown_items = opts.items
-    }
+    this.company_ids = opts.company_ids
 
   </script>
 
