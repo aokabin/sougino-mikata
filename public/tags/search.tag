@@ -1,70 +1,44 @@
 
 <search>
-
-    <div each={ shown_items }>
-        <input type="checkbox" checked={ show } onclick={ parent.hide } >
-        <h1>{ title }</h1>
-    </div>
-
-    <button onclick={ reset }>リセット</button>
-
-    <main class="compare">
-        <form action="reserve.html" method="get" name="compare">
-            <table class="compare-table">
-                <tbody>
-                    <!--チェック -->
-                    <tr class="row-check">
-                        <th>比較する</th>
-                        <td each={ val, i in companies }><input type="checkbox" checked={val.show} onclick={ parent.hide } name={ val.id }></td>
-                    </tr>
-                    <!--社名-->
-                    <tr class="row-company_name">
-                        <th>葬儀社名</th>
-                        <td each={ companies }>{ name }</td>
-                    </tr>
-                    <!--価格-->
-                    <tr class="row-price">
-                        <th>価格</th>
-                        <td each={ companies }>{ price }</td>
-                    </tr>
-                    <!--基本サービス-->
-                    <tr class="row-base_service">
-                        <th>基本</th>
-                        <td each={ companies }>
-                            <ul>
-                                <li each={ item in base }>{ item }</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <!--含むオプション-->
-                    <tr class="row-opt">
-                        <th>付加<br>オプション</th>
-                        <td each={ companies }>
-                            <ul>
-                                <li each={ item in included_options }>{ item }</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <!--含まないオプション-->
-                    <tr class="row-ignore_opt">
-                        <th>含まない<br>オプション</th>
-                        <td each={ companies }>
-                            <ul>
-                                <li each={ item in excluded_options }>{ item }</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="row-button">
-                        <th></th>
-                        <td each={ companies }>
-                            <input type="hidden">
-                            <button type="button" value={ id }>予約フォームへ</button>
-                        </td>
-                    </tr>
-              </tbody>
-            </table>
-        </form>
-    </main>
+    
+    <section class="search-result">
+        <ul class="search-result-list">
+            <li>
+                <div class="check-area">
+                    <input type="checkbox" name="select-item" id="select-item-1" value="1">
+                    <label for="select-item-1">V</label>
+                </div>
+                <div class="plan-info">
+                    <div class="item-top-area">
+                        <div class="left">
+                            <img src="./img/plan1-thumb.jpg" alt="">
+                        </div>
+                        <div class="price-area">
+                            <h4 class="price">570,238円</h4>
+                            <div class="review-area">
+                                <div>
+                                    <span class="review-cnt">★★★</span>
+                                    <span class="review-title">とても良い</span>
+                                </div>
+                                <div><a href="" class="review-href">口コミ</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <div class="left">
+                            <h2 class="company-name">金城葬祭</h2>
+                            <h3 class="plan-name">こだわり納得プラン</h3>
+                        </div>
+                        <div class="right">
+                            <a class="detail-link" href="">
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
 
   <script>
     this.companies = opts.companies
