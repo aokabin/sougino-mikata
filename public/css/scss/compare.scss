@@ -1,0 +1,117 @@
+@charset "utf-8";
+main.compare{
+}
+header{
+    padding: .6rem;
+    background-color: #928B3D;
+    h2{
+        text-align: center;
+        margin-bottom: .6rem;
+        font-weight: bold;
+        color: white;
+    }
+}
+/* 検索値表示 */
+ul.search-param-list{
+    display: flex;
+    height:inherit;
+    justify-content: center;
+    align-items: center;
+    li{
+        color: white;
+        font-size: .9rem;
+        &:not(:last-child){
+            margin-right: .8rem;
+        }
+    }
+}
+
+.compare-table-area{
+    padding: 1rem 0 0 .3rem;
+    display: flex;
+}
+
+.compare-table-area .col{
+    display: flex;
+    flex-basis: 170px;
+    min-width:170px;
+    max-width: 170px;
+    flex-direction: column;
+    border:2px solid #ddd;
+    border-radius: 12px;
+    margin-right: .1rem;
+    overflow: hidden;
+}
+.col .check-area{
+    background-color: #EACE0A;
+    padding:.5rem 0;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.col .row{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #EDDC64;
+}
+.col .row:not(:nth-of-type(1)){
+    padding: .8rem;
+}
+.row h2,
+.row h3,
+.row h4,
+.row h5{
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.row h4 ~ div{
+    line-height: 1.6;
+    font-size: .8rem;
+}
+
+.price-area{
+    flex:auto;
+    padding-left: 2.2rem;
+    .price{
+        color: #f98e00;
+        font-size: 1.1rem;
+        margin-bottom: .1rem;
+        &::after{
+            content: "(税込)";
+            display: inline-block;
+            font-size: .8rem;
+            color: #f98e00;
+        }
+    }
+    .review-cnt {
+        color: #eddc64;
+        font-size: 1.2rem;
+    }
+    .review-title {
+        font-size: .7rem;
+        font-weight: bold;
+    }
+    .review-href {
+        text-decoration: underline;
+        color: dodgerblue;
+    }
+}
+.row h3{
+    font-weight:normal;
+    font-size: .8rem;
+}
+div.compare-table{
+    border-radius: 2px;
+    overflow: auto;
+}
+.item-top-area img{
+    width: 200px;
+    height: 200px;
+}
+
+.item-top-area {
+    width: 160px;
+}
