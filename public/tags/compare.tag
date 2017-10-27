@@ -25,7 +25,7 @@
                             <h3 class="plan-name">{ subtitle }</h3>
                         </div>
                         <div class="reserve row">
-                            <a href="detail.html">詳細・予約</a>
+                            <a href="r-input.html">詳細・予約</a>
                         </div>
                         <div class="price-area row">
                             <h4 class="price">{ price }</h4>

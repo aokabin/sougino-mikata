@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box; }
+
+header {
+  padding: .8rem 0;
+  background-color: #928B3D; }
+  header h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem; }
+
+main.reserve.fin {
+  padding: 2.6rem 1rem;
+  text-align: center; }
+  main.reserve.fin section.top-message {
+    margin-bottom: 2rem; }
+    main.reserve.fin section.top-message h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold; }
+    main.reserve.fin section.top-message .message {
+      margin-top: 2.8rem; }
+    main.reserve.fin section.top-message h4 {
+      font-weight: bold;
+      margin-bottom: .9rem;
+      line-height: 1.4;
+      font-size: .8rem; }
+    main.reserve.fin section.top-message p.note {
+      color: crimson;
+      line-height: 1.5;
+      font-weight: bold;
+      font-size: .8rem; }
+  main.reserve.fin section.box {
+    border: 1px solid rgba(146, 139, 61, 0.7);
+    padding: 2px; }
+    main.reserve.fin section.box .inner-box {
+      border: 1px solid rgba(146, 139, 61, 0.7);
+      padding: 2.6rem 3rem 3.2rem; }
+    main.reserve.fin section.box h3 {
+      font-weight: bold;
+      font-size: 1em;
+      line-height: 1.7;
+      margin-bottom: 3.2rem; }
+    main.reserve.fin section.box p.receipt {
+      font-weight: bold; }
+  main.reserve.fin section.btn-area {
+    margin-top: 3rem; }
+    main.reserve.fin section.btn-area a.top {
+      background-color: #928B3D;
+      display: inline-block;
+      color: white;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: .4rem 0;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      border-radius: 6px; }
+
+/*# sourceMappingURL=r-fin.css.map */

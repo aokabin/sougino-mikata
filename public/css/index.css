@@ -12,7 +12,7 @@
       color: #DDA300; }
 
 main.top {
-  padding-bottom: 2rem; }
+  margin-bottom: 3.6rem; }
   main.top section.form-area {
     padding: .2rem;
     background-color: #928B3D; }
@@ -52,7 +52,6 @@ main.top {
         color: white;
         height: 1.4rem;
         font-size: .6rem;
-        display: inline-block;
         width: .8rem;
         top: 0;
         bottom: 0;
@@ -63,5 +62,14 @@ main.top {
         display: flex;
         align-items: center;
         justify-content: center; }
+
+section.info {
+  width: 92%;
+  margin: 0 auto; }
+  section.info .call-to {
+    width: 200px;
+    margin: 3rem auto; }
+    section.info .call-to a {
+      display: block; }
 
 /*# sourceMappingURL=index.css.map */

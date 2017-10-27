@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>葬儀のミカタ | 葬儀の予約 - 入力</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/r-input.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">holy IE</p>
+<![endif]-->
+<div class="wrap">
+    <header>
+        <h2>ご指定プラン / 家族葬</h2>
+    </header>
+    <main class="reserve input">
+        <section class="plan-special">
+            <h3 class="company-name">金城葬祭</h3>
+            <h4 class="">こだわり濃縮プランの特徴</h4>
+            <div class="plan-description">
+                <p>
+                    ご親族・身近な近親者の皆さまでごゆっくりお別れいただけるプランです。
+                    通夜式・ご葬儀式・火葬、までの設営・進行がプランに含まれます。
+                </p>
+                <p>
+                    帝都葬祭の-オリジナルフラワー祭壇は他社より１ランク上のフラワー祭壇でございます。
+                </p>
+                <p>
+                    全て生花を使用しておりますので、出棺時には全てのお花をお棺にお入れすることができます。
+                </p>
+            </div>
+        </section>
+        <section class="price">
+            <h4>価格</h4>
+            <h5>570,238</h5>
+        </section>
+        <section class="require-item">
+            <h4>必須項目</h4>
+            <p>
+                お棺・ドライアイス・車両
+                装飾・各種消耗品・人件費
+            </p>
+        </section>
+        <section class="base-plan">
+            <h4>基本プラン</h4>
+            <dl>
+                <dt>●  お迎え～ご安置</dt>
+                <dd>
+                    式場費（１泊２日）/祭壇＋装飾/寝台車（昼間）/霊柩車遺影写真/仏具一式/骨箱（4寸）/位牌（大・小）
+                </dd>
+                <dt>●  火　葬</dt>
+                <dd>寝台車(葬儀場～火葬場)/火葬料金/骨壺・骨箱</dd>
+            </dl>
+        </section>
+        <section class="no-include-option">
+            <h4>今回含まれていない <br>オプション</h4>
+            <ul>
+                <li>通常プラン×２倍のお花増量</li>
+                <li>骨ネックレス</li>
+            </ul>
+        </section>
+        <section class="reserve-form-input">
+            <form action="reserve/confirm.html" method="get" name="input">
+                <div class="form-group require">
+                    <label>お名前</label>
+                    <input type="text" name="name" placeholder="例）葬儀太郎">
+                </div>
+                <div class="form-group require">
+                    <label>メールアドレス</label>
+                    <input type="email" name="email" placeholder="例）sougi@mikata.com">
+                </div>
+                <div class="form-group require">
+                    <label>電話番号</label>
+                    <input type="tel" name="tel" placeholder="例）080555666">
+                    <p class="caption">※葬儀会社からご連絡させていただく場合がございます</p>
+                </div>
+                <div class="form-group require">
+                    <label>葬儀を行う予定の地域</label>
+                    <div class="select-pref-area">
+                        <select name="pref">
+                            <option value="" selected="">都道府県を選択</option>
+                            <option value="1">青森県</option>
+                            <option value="2">森県</option>
+                            <option value="3">青</option>
+                            <option value="4">森</option>
+                            <option value="5">県</option>
+                        </select>
+                    </div>
+                    <div class="country">
+                        <input type="text" name="country" placeholder="市町村">
+                    </div>
+                </div>
+                <div class="form-group require">
+                    <label>現在の状況</label>
+                    <div class="radio-box">
+                        <div class="radio-group">
+                            <input type="radio" name="condition" value="1" id="cond-radio-1">
+                            <label for="cond-radio-1" class="radio">すでにお亡くなりになっている</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="condition" value="1" id="cond-radio-2">
+                            <label for="cond-radio-2" class="radio">2〜3日以内に準備したい</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="condition" value="1" id="cond-radio-3">
+                            <label for="cond-radio-3" class="radio">10日以内に準備したい</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="condition" value="1" id="cond-radio-4">
+                            <label for="cond-radio-4" class="radio">1ヶ月以内に準備したい</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="condition" value="1" id="cond-radio-5">
+                            <label for="cond-radio-5" class="radio">1ヶ月以上、時間をかけて検討</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-area">
+                    <a href="r-confirm.html">内容確認</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</div>
+<!--scripts-->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/riot@3.7/riot+compiler.min.js"></script>
+<script src="tags/compare.tag" type="riot/tag"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="plugins.js"></script>
+<script src="main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

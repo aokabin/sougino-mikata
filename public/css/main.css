@@ -9,7 +9,7 @@ header.main-header {
   width: 100%;
   font-weight: bold; }
   header.main-header h1.main-logo {
-    padding-right: .8rem;
+    padding-right: 1rem;
     border-right: 1px solid #222;
     flex: 1.2; }
   header.main-header .call-to {

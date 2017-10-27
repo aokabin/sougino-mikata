@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import "variables";
+
+*{
+    box-sizing: border-box;
+}
+$reserve-input-padding-left: 1.5rem;
+
+@include header-common;
+
+main.reserve.fin{
+    padding: 2.6rem 1rem;
+    text-align: center;
+    section.top-message{
+        margin-bottom: 2rem;
+        h3{
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .message{
+            margin-top: 2.8rem;
+        }
+        h4{
+            font-weight: bold;
+            margin-bottom: .9rem;
+            line-height: 1.4;
+            font-size: .8rem;
+        }
+        p.note{
+            color: crimson;
+            line-height: 1.5;
+            font-weight: bold;
+            font-size: .8rem;
+        }
+    }
+    section.box{
+        border: 1px solid rgba($main-color, .7);
+        padding: 2px;
+        .inner-box{
+            border: 1px solid rgba($main-color, .7);
+            padding:2.6rem 3rem 3.2rem ;
+        }
+        h3{
+            font-weight: bold;
+            font-size: 1em;
+            line-height: 1.7;
+            margin-bottom: 3.2rem;
+        }
+        p.receipt{
+            font-weight: bold;
+        }
+    }
+    section.btn-area{
+        margin-top: 3rem;
+        a.top{
+            @include default-btn($main-color);
+            padding: .6rem 1rem ;
+            border-radius: 6px;
+        }
+    }
+}

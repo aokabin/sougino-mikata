@@ -28,50 +28,46 @@ ul.search-param-list {
       margin-right: .8rem; }
 
 .compare-table-area {
-  padding: 1rem 0 6rem .3rem;
+  padding: .3rem 0 4.3rem .3rem;
   display: flex; }
-
-.compare-table-area .col {
-  display: flex;
-  flex-basis: 170px;
-  min-width: 170px;
-  max-width: 170px;
-  flex-direction: column;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-right: .2rem;
-  overflow: hidden; }
-
-.col .check-area {
-  background-color: #EACE0A;
-  padding: .5rem 0;
-  color: white;
-  font-weight: bold;
-  text-align: center; }
-
-.col .row {
-  display: flex;
-  flex-direction: column;
-  border-bottom: solid 1px #EDDC64; }
-
-.col .row:not(:nth-of-type(1)) {
-  padding: .8rem; }
+  .compare-table-area .col {
+    display: flex;
+    flex-basis: 170px;
+    min-width: 170px;
+    max-width: 170px;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-right: .2rem;
+    overflow: hidden; }
+    .compare-table-area .col .check-area {
+      background-color: #EACE0A;
+      padding: .5rem 0;
+      color: white;
+      font-weight: bold;
+      text-align: center; }
+    .compare-table-area .col .row {
+      display: flex;
+      flex-direction: column;
+      border-bottom: solid 1px #EDDC64; }
+      .compare-table-area .col .row:not(:first-of-type) {
+        padding: 1.3rem .8rem; }
+      .compare-table-area .col .row h2, .compare-table-area .col .row h3, .compare-table-area .col .row h4, .compare-table-area .col .row h5 {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 1rem; }
+      .compare-table-area .col .row h3 {
+        font-weight: normal;
+        font-size: .8rem; }
+        .compare-table-area .col .row h3.plan-name {
+          margin-bottom: 0; }
+      .compare-table-area .col .row h4 ~ div {
+        line-height: 1.6;
+        font-size: .8rem; }
 
 .row.plan-option {
   border-bottom: none; }
-
-.row h2,
-.row h3,
-.row h4,
-.row h5 {
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-align: center;
-  margin-bottom: 1rem; }
-
-.row h4 ~ div {
-  line-height: 1.6;
-  font-size: .8rem; }
 
 .company-name {
   display: flex;
@@ -108,12 +104,6 @@ ul.search-param-list {
   .price-area .review-href {
     text-decoration: underline;
     color: dodgerblue; }
-
-.row h3 {
-  font-weight: normal;
-  font-size: .8rem; }
-  .row h3.plan-name {
-    margin-bottom: 0; }
 
 div.compare-table {
   border-radius: 2px;
