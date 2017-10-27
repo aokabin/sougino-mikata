@@ -58,7 +58,8 @@ section.search-result {
 ul.search-result-list li {
   border: 1px solid #ddd;
   border-radius: 12px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: .8rem; }
 
 .check-area {
   border-bottom: 1px solid #ccc; }
