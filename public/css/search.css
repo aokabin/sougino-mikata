@@ -21,7 +21,9 @@ ul.search-param-list {
   align-items: center; }
   ul.search-param-list li {
     color: white;
-    margin-right: 1rem; }
+    font-size: .9rem; }
+    ul.search-param-list li:not(:last-child) {
+      margin-right: .8rem; }
 
 /* ソートボタン */
 ul.plan-sort-btn-list {
@@ -51,12 +53,13 @@ ul.plan-sort-btn-list {
       color: white; }
 
 section.search-result {
-  padding: 1.4rem; }
+  padding: 1.4rem 1.3rem 4rem; }
 
 ul.search-result-list li {
-  border: 2px solid #ddd;
+  border: 1px solid #ddd;
   border-radius: 12px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: .8rem; }
 
 .check-area {
   border-bottom: 1px solid #ccc; }
@@ -66,13 +69,13 @@ ul.search-result-list li {
     display: block;
     padding: .5rem 0;
     color: #ccc;
-    background-color: white;
+    background: white url("../img/un-checkmark.svg") center/23px 23px no-repeat;
     font-weight: bold;
     text-align: center;
-    transition: background-color .2s ease, color .2s ease; }
-  .check-area input:checked + label {
-    background-color: #EACE0A;
-    color: white; }
+    transition: background .2s ease, color .2s ease; }
+    .check-area label.checked {
+      background: #EACE0A url("../img/checkmark.svg") center/23px 23px no-repeat;
+      color: white; }
 
 ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul.search-result-list h5 {
   font-weight: bold;
@@ -123,7 +126,7 @@ ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul
       align-items: center;
       height: 35px;
       font-size: 1.4rem;
-      margin-bottom: .7rem; }
+      margin-bottom: .5rem; }
       .company-info .left .company-name::before {
         content: "";
         display: inline-block;
@@ -137,8 +140,8 @@ ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul
   .company-info .right {
     padding-top: .3rem; }
     .company-info .right .detail-link {
-      height: 60px;
-      width: 60px;
+      height: 54px;
+      width: 54px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -147,5 +150,31 @@ ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul
       color: white;
       margin-right: .4rem;
       font-weight: bold; }
+
+footer {
+  padding: .5rem 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  background-color: white;
+  z-index: 10; }
+  footer i {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../img/un-checkmark.svg") center no-repeat;
+    margin-right: .2rem; }
+  footer button {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #928B3D;
+    padding: .4rem 3rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 2rem; }
 
 /*# sourceMappingURL=search.css.map */

@@ -1,14 +1,19 @@
-header.main-header{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    border-bottom:1px solid #ddd;
-    margin-bottom: 1rem;
+header.main-header {
+  padding: .5rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #666;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: bold; }
+  header.main-header h1.main-logo {
+    padding-right: .8rem;
+    border-right: 1px solid #222;
+    flex: 1.2; }
+  header.main-header .call-to {
+    flex: 1;
+    padding-left: 1.2rem; }
 
-    width: 100%;
-    font-weight: bold;
-}
-h1.main-logo{
-    font-size: 20px;
-    padding-left: 1rem;
-}
+/*# sourceMappingURL=main.css.map */

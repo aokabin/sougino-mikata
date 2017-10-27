@@ -10,6 +10,15 @@ header{
         font-weight: bold;
         color: white;
     }
+    .btn-area{
+        text-align: center;
+        margin-bottom: .4rem;
+        button{
+            padding: .2rem 1rem;
+            background-color: white;
+            color: #bbb;
+        }
+    }
 }
 /* 検索値表示 */
 ul.search-param-list{
@@ -27,7 +36,7 @@ ul.search-param-list{
 }
 
 .compare-table-area{
-    padding: 1rem 0 0 .3rem;
+    padding: 1rem 0 6rem .3rem;
     display: flex;
 }
 
@@ -37,9 +46,9 @@ ul.search-param-list{
     min-width:170px;
     max-width: 170px;
     flex-direction: column;
-    border:2px solid #ddd;
-    border-radius: 12px;
-    margin-right: .1rem;
+    border:1px solid #ddd;
+    border-radius: 6px;
+    margin-right: .2rem;
     overflow: hidden;
 }
 .col .check-area{
@@ -58,6 +67,11 @@ ul.search-param-list{
 .col .row:not(:nth-of-type(1)){
     padding: .8rem;
 }
+
+.row.plan-option{
+    border-bottom:none;
+}
+
 .row h2,
 .row h3,
 .row h4,
@@ -70,6 +84,22 @@ ul.search-param-list{
 .row h4 ~ div{
     line-height: 1.6;
     font-size: .8rem;
+}
+.company-name{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: .7rem;
+
+        background: url("../img/icon1.svg") center no-repeat;
+    }
 }
 
 .price-area{
@@ -102,6 +132,9 @@ ul.search-param-list{
 .row h3{
     font-weight:normal;
     font-size: .8rem;
+    &.plan-name{
+        margin-bottom: 0;
+    }
 }
 div.compare-table{
     border-radius: 2px;
@@ -114,4 +147,51 @@ div.compare-table{
 
 .item-top-area {
     width: 160px;
+}
+.row.reserve{
+    a{
+        background-color: #F9B02D;
+        display: inline-block;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: .4rem 0;
+        text-align: center;
+
+    }
+}
+footer.reset-btn-area{
+    button{
+
+    }
+}
+
+footer.reset-btn-area{
+    padding: .5rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background-color: white;
+    z-index: 10;
+    i{
+        display: inline-block;
+        width: .8rem;
+        height: .8rem;
+        background: url('../img/reset-icon.svg') center no-repeat;
+        margin-right: .2rem;
+    }
+    button{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+
+        background-color: #C6CCCC;
+        padding: .2rem 1rem;
+        font-size:.8rem;
+        color: white;
+        border: none;
+        border-radius: 2rem ;
+    }
 }

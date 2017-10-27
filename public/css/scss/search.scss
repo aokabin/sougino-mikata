@@ -17,18 +17,20 @@ header {
         color: inherit;
         margin-bottom: .6rem;
     }
-
 }
 
 /* 検索値表示 */
 ul.search-param-list {
     display: flex;
-    height: inherit;
+    height:inherit;
     justify-content: center;
     align-items: center;
-    li {
+    li{
         color: white;
-        margin-right: 1rem;
+        font-size: .9rem;
+        &:not(:last-child){
+            margin-right: .8rem;
+        }
     }
 }
 
@@ -68,16 +70,17 @@ ul.plan-sort-btn-list {
 }
 
 section.search-result {
-    padding: 1.4rem;
+    padding: 1.4rem 1.3rem 4rem;
 }
 
 ul.search-result-list{
     li {
-        border: 2px solid #ddd;
+        border: 1px solid #ddd;
         border-radius: 12px;
         overflow: hidden;
+        margin-bottom: .8rem;
+        //box-shadow: 1px 1px 3px #ddd;
     }
-
 }
 
 .check-area {
@@ -90,15 +93,19 @@ ul.search-result-list{
         padding: .5rem 0;
 
         color: #ccc;
-        background-color: white;
+        background: white url('../img/un-checkmark.svg') center /23px 23px no-repeat;
         font-weight: bold;
         text-align: center;
-        transition: background-color .2s ease,
+        transition: background .2s ease,
         color .2s ease;
+        &.checked{
+            background: #EACE0A url('../img/checkmark.svg') center /23px 23px no-repeat;
+            color: white;
+        }
     }
     input:checked + label {
-        background-color: #EACE0A;
-        color: white;
+        //background: #EACE0A url('../img/checkmark.svg') center /23px 23px no-repeat;
+        //color: white;
     }
 }
 
@@ -162,7 +169,7 @@ ul.search-result-list{
             align-items: center;
             height: 35px;
             font-size: 1.4rem;
-            margin-bottom: .7rem;
+            margin-bottom: .5rem;
             &::before{
                 content: "";
                 display: inline-block;
@@ -181,8 +188,8 @@ ul.search-result-list{
     .right{
         padding-top: .3rem;
         .detail-link{
-            height: 60px;
-            width: 60px;
+            height: 54px;
+            width: 54px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -192,5 +199,34 @@ ul.search-result-list{
             margin-right: .4rem;
             font-weight: bold;
         }
+    }
+}
+footer{
+    padding: .5rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background-color: white;
+    z-index: 10;
+    i{
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background: url('../img/un-checkmark.svg') center no-repeat;
+        margin-right: .2rem;
+    }
+    button{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+
+        background-color: #928B3D;
+        padding: .4rem 3rem;
+        font-size:1rem;
+        color: white;
+        border: none;
+        border-radius: 2rem ;
     }
 }

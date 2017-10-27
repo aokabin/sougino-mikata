@@ -14,6 +14,18 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- font -->
+        <script>
+            (function(d) {
+                var config = {
+                        kitId: 'znz1vpa',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -22,29 +34,63 @@
         <div class="wrap">
             <header class="main-header">
                 <h1 class="main-logo">
-                    <a href="index.html">葬儀のミカタ</a>
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="main-logo">
+                    </a>
                 </h1>
+                <div class="call-to">
+                    <a href="tel:090-5105-5017">
+                        <img src="img/call-no.svg" alt="">
+                    </a>
+                </div>
             </header>
+            <div class="main-visual">
+                <h2 class="tk-a-otf-ud-reimin-pr6n">
+                    各葬儀会社の <br>
+                    <span class="gold">No.1葬儀プランのみ</span>掲載
+                </h2>
+            </div>
             <main class="top">
-                <form action="search.html" method="get">
-                    <div class="form-group">
-                        <label for="input-place">場所</label>
-                        <input type="text" name="place" id="input-place">
+                <section class="form-area">
+                    <div class="inner-box">
+                        <div class="container">
+                            <form action="search.html" method="get" class="search-form">
+                                <div class="form-group">
+                                    <label for="input-place">地域</label>
+                                    <input type="text" name="place" id="input-place">
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-style">葬儀の形式</label>
+                                    <div class="select-area">
+                                        <select name="style" id="input-style">
+                                            <option value="" selected="">葬儀の形態を選択</option>
+                                            <option value="1">直葬 (火葬のみ）</option>
+                                            <option value="8">一日葬 (通夜なし)</option>
+                                            <option value="7">家族葬 (15名程度)</option>
+                                            <option value="2">家族葬 (30名程度)</option>
+                                            <option value="3">一般葬 (60名程度)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-price">予算</label>
+                                    <div class="select-area">
+                                        <select name="style" id="input-price">
+                                            <option value="" selected="">予算を選択</option>
+                                            <option value="20">20万</option>
+                                            <option value="50">50万</option>
+                                            <option value="80">80万</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="submit" onclick="location.href='compare.html'">検索</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="input-style">葬儀の形式</label>
-                        <input type="text" name="style" id="input-style">
-                    </div>
-                    <div class="form-group">
-                        <label for="input-price">予算</label>
-                        <input type="text" name="price" id="input-price">
-                    </div>
-                    <div class="btn-area">
-                        <button type="submit">検索</button>
-                    </div>
-                </form>
+                </section>
             </main>
-            <div style="margin-top: 2rem;"><a href="compare.html" style="border: 1px solid cornflowerblue; padding: .2rem; color: white; background: cornflowerblue">比較するぞ</a></div>
         </div>
         <!--scripts-->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
