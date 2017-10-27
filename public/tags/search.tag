@@ -3,7 +3,7 @@
     
     <section class="search-result">
         <ul class="search-result-list">
-            <li>
+            <li each={}>
                 <div class="check-area">
                     <input type="checkbox" name="select-item" id="select-item-1" value="1">
                     <label for="select-item-1">V</label>
@@ -42,8 +42,6 @@
 
   <script>
     this.companies = opts.companies
-    this.items = opts.items
-    this.shown_items = JSON.parse(JSON.stringify(opts.items))
 
     hide(e) {
         var checked_item = e.item
