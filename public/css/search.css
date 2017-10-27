@@ -53,10 +53,10 @@ ul.plan-sort-btn-list {
       color: white; }
 
 section.search-result {
-  padding: 1.4rem; }
+  padding: 1.4rem 1.3rem 4rem; }
 
 ul.search-result-list li {
-  border: 2px solid #ddd;
+  border: 1px solid #ddd;
   border-radius: 12px;
   overflow: hidden; }
 
@@ -68,12 +68,12 @@ ul.search-result-list li {
     display: block;
     padding: .5rem 0;
     color: #ccc;
-    background-color: white;
+    background: white url("../img/un-checkmark.svg") center/23px 23px no-repeat;
     font-weight: bold;
     text-align: center;
-    transition: background-color .2s ease, color .2s ease; }
+    transition: background .2s ease, color .2s ease; }
   .check-area input:checked + label {
-    background-color: #EACE0A;
+    background: #EACE0A url("../img/checkmark.svg") center/23px 23px no-repeat;
     color: white; }
 
 ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul.search-result-list h5 {
@@ -125,7 +125,7 @@ ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul
       align-items: center;
       height: 35px;
       font-size: 1.4rem;
-      margin-bottom: .7rem; }
+      margin-bottom: .5rem; }
       .company-info .left .company-name::before {
         content: "";
         display: inline-block;
@@ -139,8 +139,8 @@ ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul
   .company-info .right {
     padding-top: .3rem; }
     .company-info .right .detail-link {
-      height: 60px;
-      width: 60px;
+      height: 54px;
+      width: 54px;
       display: flex;
       justify-content: center;
       align-items: center;

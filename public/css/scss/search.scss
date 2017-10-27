@@ -70,14 +70,15 @@ ul.plan-sort-btn-list {
 }
 
 section.search-result {
-    padding: 1.4rem;
+    padding: 1.4rem 1.3rem 4rem;
 }
 
 ul.search-result-list{
     li {
-        border: 2px solid #ddd;
+        border: 1px solid #ddd;
         border-radius: 12px;
         overflow: hidden;
+        //box-shadow: 1px 1px 3px #ddd;
     }
 
 }
@@ -92,14 +93,14 @@ ul.search-result-list{
         padding: .5rem 0;
 
         color: #ccc;
-        background-color: white;
+        background: white url('../img/un-checkmark.svg') center /23px 23px no-repeat;
         font-weight: bold;
         text-align: center;
-        transition: background-color .2s ease,
+        transition: background .2s ease,
         color .2s ease;
     }
     input:checked + label {
-        background-color: #EACE0A;
+        background: #EACE0A url('../img/checkmark.svg') center /23px 23px no-repeat;
         color: white;
     }
 }
@@ -164,7 +165,7 @@ ul.search-result-list{
             align-items: center;
             height: 35px;
             font-size: 1.4rem;
-            margin-bottom: .7rem;
+            margin-bottom: .5rem;
             &::before{
                 content: "";
                 display: inline-block;
@@ -183,8 +184,8 @@ ul.search-result-list{
     .right{
         padding-top: .3rem;
         .detail-link{
-            height: 60px;
-            width: 60px;
+            height: 54px;
+            width: 54px;
             display: flex;
             justify-content: center;
             align-items: center;

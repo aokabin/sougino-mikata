@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="plan-option row">
-                            <h4>オプション</h4>
+                            <h4>含まれない<br>オプション</h4>
                             <div class="option-items">
                                 { excluded_options }
                             </div>

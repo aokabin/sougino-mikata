@@ -57,6 +57,9 @@ ul.search-param-list {
 .col .row:not(:nth-of-type(1)) {
   padding: .8rem; }
 
+.row.plan-option {
+  border-bottom: none; }
+
 .row h2,
 .row h3,
 .row h4,
