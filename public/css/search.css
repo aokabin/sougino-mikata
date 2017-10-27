@@ -58,7 +58,8 @@ section.search-result {
 ul.search-result-list li {
   border: 1px solid #ddd;
   border-radius: 12px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: .8rem; }
 
 .check-area {
   border-bottom: 1px solid #ccc; }
@@ -72,9 +73,9 @@ ul.search-result-list li {
     font-weight: bold;
     text-align: center;
     transition: background .2s ease, color .2s ease; }
-  .check-area input:checked + label {
-    background: #EACE0A url("../img/checkmark.svg") center/23px 23px no-repeat;
-    color: white; }
+    .check-area label.checked {
+      background: #EACE0A url("../img/checkmark.svg") center/23px 23px no-repeat;
+      color: white; }
 
 ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul.search-result-list h5 {
   font-weight: bold;
