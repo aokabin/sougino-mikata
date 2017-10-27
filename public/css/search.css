@@ -1,0 +1,151 @@
+@charset "UTF-8";
+header {
+  padding: .6rem;
+  background-color: #928B3D;
+  color: white; }
+  header h2 {
+    text-align: center;
+    margin-bottom: .1rem;
+    font-weight: bold;
+    color: inherit; }
+  header .search-item-cnt {
+    text-align: center;
+    color: inherit;
+    margin-bottom: .6rem; }
+
+/* 検索値表示 */
+ul.search-param-list {
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center; }
+  ul.search-param-list li {
+    color: white;
+    margin-right: 1rem; }
+
+/* ソートボタン */
+ul.plan-sort-btn-list {
+  padding: .3rem 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  ul.plan-sort-btn-list li {
+    flex: 1;
+    text-align: center;
+    padding: .3rem;
+    cursor: pointer; }
+    ul.plan-sort-btn-list li:not(:last-child) {
+      margin-right: .3rem; }
+    ul.plan-sort-btn-list li input {
+      display: none; }
+    ul.plan-sort-btn-list li label {
+      border: 1px solid #928B3D;
+      font-size: .9rem;
+      border-radius: 1rem;
+      display: block;
+      padding: .4rem 0;
+      color: #928B3D;
+      transition: background-color .2s ease, color .2s ease; }
+    ul.plan-sort-btn-list li input:checked + label {
+      background-color: #928B3D;
+      color: white; }
+
+section.search-result {
+  padding: 1.4rem; }
+
+ul.search-result-list li {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden; }
+
+.check-area {
+  border-bottom: 1px solid #ccc; }
+  .check-area input {
+    display: none; }
+  .check-area label {
+    display: block;
+    padding: .5rem 0;
+    color: #ccc;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color .2s ease, color .2s ease; }
+  .check-area input:checked + label {
+    background-color: #EACE0A;
+    color: white; }
+
+ul.search-result-list h2, ul.search-result-list h3, ul.search-result-list h4, ul.search-result-list h5 {
+  font-weight: bold;
+  font-size: 1.1rem; }
+
+.plan-info {
+  height: 100%;
+  padding: 1rem; }
+
+.item-top-area {
+  display: flex;
+  align-items: center; }
+  .item-top-area img {
+    width: 90px;
+    height: 90px; }
+  .item-top-area .price-area {
+    flex: auto;
+    padding-left: 2.2rem; }
+    .item-top-area .price-area .price {
+      color: #f98e00;
+      font-size: 1.4rem;
+      margin-bottom: .4rem; }
+      .item-top-area .price-area .price::after {
+        content: "(税込)";
+        display: inline-block;
+        font-size: .8rem;
+        color: #f98e00; }
+    .item-top-area .price-area .review-cnt {
+      color: #eddc64;
+      font-size: 1.2rem; }
+    .item-top-area .price-area .review-title {
+      font-size: .7rem;
+      font-weight: bold; }
+    .item-top-area .price-area .review-href {
+      text-decoration: underline;
+      color: dodgerblue; }
+
+.company-info {
+  margin-top: 1rem;
+  background-color: #f9f7ea;
+  padding: .4rem;
+  display: flex;
+  align-items: center; }
+  .company-info .left {
+    flex: auto; }
+    .company-info .left .company-name {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 1.4rem;
+      margin-bottom: .7rem; }
+      .company-info .left .company-name::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: .7rem;
+        background: url("../img/icon1.svg") center no-repeat; }
+    .company-info .left .plan-name {
+      padding-left: 2rem;
+      font-size: 1rem; }
+  .company-info .right {
+    padding-top: .3rem; }
+    .company-info .right .detail-link {
+      height: 60px;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #f9b02d;
+      color: white;
+      margin-right: .4rem;
+      font-weight: bold; }
+
+/*# sourceMappingURL=search.css.map */
