@@ -1,16 +1,26 @@
 var search_data = {
-   companies: [
+   companies: [ // 最初のデータは人気順でソート済みとする
       {
          id: 1,
          name: "金城葬祭",
          subtitle: "こだわり納得プラン",
          price: 570238,
-         rate_star: "★★★",
+         rate_star: 3,
          rate_evaluate: "とても良い",
-         opinion_link: "",
+         opinion_link: "https://www.google.co.jp",
          is_checked: true,
-         detail_link: ""
+         detail_link: "https://www.google.co.jp"
 
+      },{
+         id: 2,
+         name: "池上殿",
+         subtitle: "シンプルプラン",
+         price: 570237,
+         rate_star: 2,
+         rate_evaluate: "とても良い",
+         opinion_link: "https://www.google.co.jp",
+         is_checked: true,
+         detail_link: "https://www.google.co.jp"
       }
    ]
 };
@@ -86,5 +96,25 @@ riot.mount('entry', data);
 riot.mount('confirm', data);
 
 var toYenPrice = function(price) {
-   return price.toLocaleString()+"円"
+   return price.toLocaleString()+"円";
+}
+
+var toRatingStar = function(rate) {
+   var stars = "";;
+   for(i=rate;i--;) stars += "★";
+   return stars;
+}
+
+var objArraySort = function(ary, key, order) {
+    var reverse = 1;
+    if(order && order.toLowerCase() == "desc") 
+        reverse = -1;
+    ary.sort(function(a, b) {
+        if(a[key] < b[key])
+            return -1 * reverse;
+        else if(a[key] == b[key])
+            return 0;
+        else
+            return 1 * reverse;
+    });
 }
