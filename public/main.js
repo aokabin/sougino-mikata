@@ -51,7 +51,7 @@ var data = {
          subtitle: "こだわり納得プラン",
          price: "570,238円",
          rate_star: "★★★",
-         rate_opinion: "とても良い",
+         rate_evaluate: "とても良い",
          opinion_link: "",
          base: [
             "お棺", "ドライアイス", "車両", "装飾"
@@ -70,7 +70,7 @@ var data = {
          subtitle: "こだわり納得プラン",
          price: "570,238円",
          rate_star: "★★★",
-         rate_opinion: "とても良い",
+         rate_evaluate: "とても良い",
          opinion_link: "",
          base: [
             "お棺", "ドライアイス", "車両", "装飾"
