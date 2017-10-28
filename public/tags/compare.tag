@@ -28,10 +28,10 @@
                             <a href="r-input.html">詳細・予約</a>
                         </div>
                         <div class="price-area row">
-                            <h4 class="price">{ price }</h4>
+                            <h4 class="price">{ toYenPrice(price) }</h4>
                             <div class="review-area">
                                 <div>
-                                    <span class="review-cnt">{ rate_star }</span>
+                                    <span class="review-cnt">{ toRatingStar(rate_star) }</span>
                                     <span class="review-title">{ rate_evaluate }</span>
                                 </div>
                                 <div><a href="{ opinion_link }" class="review-href">口コミ</a></div>
