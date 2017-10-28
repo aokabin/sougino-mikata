@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import "variables";
+
+*{
+    box-sizing: border-box;
+}
+$reserve-input-padding-left: 1.5rem;
+
+@include header-common;
+
+main.review{
+    padding: 2rem 1.2rem 5rem ;
+}
+
+footer{
+    border-top:1px solid #ddd;
+    background-color: white;
+    padding: .8rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .btn-area{
+        text-align: center;
+        a{
+            @include default-btn();
+            padding:.5rem 1.3rem;
+            border-radius: 6px;
+            letter-spacing: 2px;
+            &.back{
+                background-color: #848483;
+            }
+        }
+    }
+}

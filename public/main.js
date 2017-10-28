@@ -1,96 +1,56 @@
-var search_data = {
+var data = {
    companies: [ // 最初のデータは人気順でソート済みとする
       {
          id: 1,
          name: "金城葬祭",
          subtitle: "こだわり納得プラン",
-         price: 570238,
+         price: 470238,
          rate_star: 3,
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
          is_checked: false,
-         detail_link: "plan-info.html"
-
+         detail_link: "review.html",
+         base: "お棺・ドライアイス・車両・装飾",
+         included_options: "●お迎え〜御安置 式場費（１泊２日）/ 祭壇＋装飾 / 寝台車 / 霊柩車 / 遺影写真 ●火葬 寝台車(葬儀場〜火葬場) 火葬料金 / 骨壺・骨箱 ",
+         excluded_options: "・骨ネックレス",
+         show: true
       },{
          id: 2,
          name: "池上殿",
-         subtitle: "シンプルプラン",
-         price: 570237,
+         subtitle: "家族一体あったかプラン",
+         price: 340157,
          rate_star: 2,
-         rate_evaluate: "とても良い",
+         rate_evaluate: "満足できる",
          opinion_link: "https://www.google.co.jp",
          is_checked: false,
-         detail_link: "plan-info.html"
+         detail_link: "review.html",
+         base: "お棺・ドライアイス・車両・装飾",
+         included_options: "●お迎え〜御安置 式場費（１泊２日）/ 祭壇＋装飾 / 寝台車 / 霊柩車 / 遺影写真 ",
+         excluded_options: "●火葬 寝台車(葬儀場〜火葬場) 火葬料金 / 骨壺・骨箱 ・骨ネックレス",
+         show: true
+      },{
+         id: 3,
+         name: "平野院",
+         subtitle: "シンプルプラン",
+         price: 390157,
+         rate_star: 1,
+         rate_evaluate: "良い",
+         opinion_link: "https://www.google.co.jp",
+         is_checked: false,
+         detail_link: "review.html",
+         base: "お棺・ドライアイス・車両・装飾",
+         included_options: "●お迎え〜御安置 式場費（１泊２日）/ 祭壇＋装飾 / 寝台車 / 霊柩車 / 遺影写真 ",
+         excluded_options: "●火葬 寝台車(葬儀場〜火葬場) 火葬料金 / 骨壺・骨箱 ・骨ネックレス",
+         show: true
       }
    ]
 };
-riot.mount('search', search_data);
-var data = {
+riot.mount('search', data);
+var filter_data = {
    company_ids: []
 };
 riot.mount('filter', data);
-var data = {
-   title: '葬儀社名',
-   companies: [
-      {
-         id: 1,
-         name: "金城葬祭",
-         subtitle: "こだわり納得プラン",
-         price: "570,238円",
-         rate_star: "★★★",
-         rate_evaluate: "とても良い",
-         opinion_link: "",
-         base: "お棺・ドライアイス・車両・装飾",
-         included_options: "お棺・ドライアイス・車両・装飾",
-         excluded_options: "お棺・ドライアイス・車両・装飾",
-         show: true
-      },
-      {
-         id: 2,
-         name: "金城葬祭",
-         subtitle: "こだわり納得プラン",
-         price: "570,238円",
-         rate_star: "★★★",
-         rate_evaluate: "とても良い",
-         opinion_link: "",
-         base: [
-            "お棺", "ドライアイス", "車両", "装飾"
-         ],
-         included_options: [
-            "お棺", "ドライアイス", "車両", "装飾"
-         ],
-         excluded_options: [
-            "お棺", "ドライアイス", "車両", "装飾"
-         ],
-         show: true
-      },
-      {
-         id: 3,
-         name: "金城葬祭",
-         subtitle: "こだわり納得プラン",
-         price: "570,238円",
-         rate_star: "★★★",
-         rate_evaluate: "とても良い",
-         opinion_link: "",
-         base: [
-            "お棺", "ドライアイス", "車両", "装飾"
-         ],
-         included_options: [
-            "お棺", "ドライアイス", "車両", "装飾"
-         ],
-         excluded_options: [
-            "お棺", "ドライアイス", "車両", "装飾"
-         ],
-         show: true
-      }
-   ],
-   items: [
-      { title: 'Avoid excessive caffeine', show: true },
-      { title: 'Hidden item',  show: true },
-      { title: 'Be less provocative', show: true },
-      { title: 'Be nice to people', show: true }
-   ]
-};
+
 riot.mount('compare', data);
 riot.mount('entry', data);
 riot.mount('confirm', data);
