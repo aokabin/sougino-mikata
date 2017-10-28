@@ -11,8 +11,8 @@ var data = {
          is_checked: false,
          detail_link: "review.html",
          base: "お棺・ドライアイス・車両・装飾",
-         included_options: "お棺・ドライアイス・車両・装飾",
-         excluded_options: "お棺・ドライアイス・車両・装飾",
+         included_options: "●お迎え〜御安置 式場費（１泊２日）/ 祭壇＋装飾 / 寝台車 / 霊柩車 / 遺影写真 ●火葬 寝台車(葬儀場〜火葬場) 火葬料金 / 骨壺・骨箱 ",
+         excluded_options: "・骨ネックレス",
          show: true
       },{
          id: 2,
@@ -25,8 +25,8 @@ var data = {
          is_checked: false,
          detail_link: "review.html",
          base: "お棺・ドライアイス・車両・装飾",
-         included_options: "お棺・ドライアイス・車両・装飾",
-         excluded_options: "お棺・ドライアイス・車両・装飾",
+         included_options: "●お迎え〜御安置 式場費（１泊２日）/ 祭壇＋装飾 / 寝台車 / 霊柩車 / 遺影写真 ",
+         excluded_options: "●火葬 寝台車(葬儀場〜火葬場) 火葬料金 / 骨壺・骨箱 ・骨ネックレス",
          show: true
       },{
          id: 3,
@@ -39,8 +39,8 @@ var data = {
          is_checked: false,
          detail_link: "review.html",
          base: "お棺・ドライアイス・車両・装飾",
-         included_options: "お棺・ドライアイス・車両・装飾",
-         excluded_options: "お棺・ドライアイス・車両・装飾",
+         included_options: "●お迎え〜御安置 式場費（１泊２日）/ 祭壇＋装飾 / 寝台車 / 霊柩車 / 遺影写真 ",
+         excluded_options: "●火葬 寝台車(葬儀場〜火葬場) 火葬料金 / 骨壺・骨箱 ・骨ネックレス",
          show: true
       }
    ]
