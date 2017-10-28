@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import "variables";
+
+*{
+    box-sizing: border-box;
+}
+$reserve-input-padding-left: 1.5rem;
+
+@include header-common;
+
+main.reserve.input{
+    padding: 1.1rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    //sections
+    section{
+        border-bottom: 1px solid #eddc64;
+        margin-bottom: 1.2rem;
+        padding: 0 .8rem 1rem;
+        h4{
+            font-weight: bold;
+            margin-bottom: .6rem;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+        }
+    }
+
+    //プランの特徴
+    section.plan-special{
+        h3.company-name{
+            display: flex;
+            align-items: center;
+            height: 35px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-bottom: .4rem;
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin-right: .7rem;
+
+                background: url("../img/icon1.svg") center no-repeat;
+            }
+        }
+        h4{
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 1.4rem;
+            padding-left: $reserve-input-padding-left;
+        }
+        .plan-description{
+            padding-left: $reserve-input-padding-left;
+            p{
+                line-height: 1.4;
+                font-size: .9rem;
+            }
+            p:not(:last-of-type){
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    //価格
+    section.price{
+        h5{
+            color: #f98e00;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: .1rem;
+            font-weight: bold;
+            &::after{
+                margin-left: .2rem;
+                content: "円 (税込)";
+                display: inline-block;
+                font-size: .8rem;
+                color: #f98e00;
+            }
+        }
+    }
+
+    //必須項目
+    section.require-item{
+        p{
+            line-height: 1.5;
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+
+    //基本プラン
+    section.base-plan{
+        dl{
+            padding-left:$reserve-input-padding-left;
+            dt{
+                margin-bottom: .4rem;
+            }
+            dd,dt{
+                line-height: 1.4;
+            }
+            dd{
+                margin-bottom: 1rem;
+                padding-left: 1.2rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    //含まないオプション
+    section.no-include-option{
+        h4{
+            margin-bottom: .8rem;
+        }
+        ul{
+            padding-left: $reserve-input-padding-left;
+            li{
+                list-style: inside;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    //予約ボタン
+    section.reserve-link{
+        .btn-area{
+            text-align: center;
+            a{
+                @include default-btn();
+                padding:.8rem 1.3rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

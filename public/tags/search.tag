@@ -15,7 +15,7 @@
                 <label for="radio-3">近い順</label>
             </li>
         </ul>
-    
+
         <section class="search-result">
             <ul class="search-result-list">
                 <li each={ companies }>
@@ -76,7 +76,7 @@
 
     objArraySort(ary, key, order) {
         var reverse = 1;
-        if(order && order.toLowerCase() == "desc") 
+        if(order && order.toLowerCase() == "desc")
             reverse = -1;
         ary.sort(function(a, b) {
             if(a[key] < b[key])

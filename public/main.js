@@ -9,7 +9,7 @@ var search_data = {
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
          is_checked: true,
-         detail_link: "https://www.google.co.jp"
+         detail_link: "plan-info.html"
 
       },{
          id: 2,
@@ -20,7 +20,7 @@ var search_data = {
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
          is_checked: true,
-         detail_link: "https://www.google.co.jp"
+         detail_link: "plan-info.html"
       }
    ]
 };
@@ -100,14 +100,14 @@ var toYenPrice = function(price) {
 }
 
 var toRatingStar = function(rate) {
-   var stars = "";;
+   var stars = "";
    for(i=rate;i--;) stars += "★";
    return stars;
 }
 
 var objArraySort = function(ary, key, order) {
     var reverse = 1;
-    if(order && order.toLowerCase() == "desc") 
+    if(order && order.toLowerCase() == "desc")
         reverse = -1;
     ary.sort(function(a, b) {
         if(a[key] < b[key])
@@ -118,3 +118,4 @@ var objArraySort = function(ary, key, order) {
             return 1 * reverse;
     });
 }
+

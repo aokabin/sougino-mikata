@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "variables";
+
 .main-visual{
   height: 220px;
   display: flex;
@@ -17,10 +19,10 @@
   }
 }
 main.top{
-  padding-bottom: 2rem;
+    margin-bottom: 3.6rem;
   section.form-area{
     padding: .2rem;
-    background-color: #928B3D;
+    background-color: $main-color;
     .inner-box{
       border:1px solid white;
       padding: 3rem 3rem 1rem;
@@ -67,7 +69,6 @@ main.top{
           color: white;
           height: 1.4rem;
           font-size: .6rem;
-          display: inline-block;
           width: .8rem;
           top: 0;
           bottom: 0;
@@ -84,4 +85,16 @@ main.top{
       }
     }
   }
+}
+
+section.info{
+    width: 92%;
+    margin: 0 auto;
+    .call-to{
+        width: 200px;
+        margin: 3rem auto;
+        a{
+            display: block;
+        }
+    }
 }
