@@ -1,10 +1,11 @@
 @charset "utf-8";
+@import "variables";
 main.compare {
 }
 
 header {
     padding: .6rem;
-    background-color: #928B3D;
+    background-color: $main-color;
     color: white;
     h2 {
         text-align: center;
@@ -52,17 +53,17 @@ ul.plan-sort-btn-list {
             display: none;
         }
         label {
-            border: 1px solid #928B3D;
+            border: 1px solid $main-color;
             font-size: .9rem;
             border-radius: 1rem;
             display: block;
             padding: .4rem 0;
-            color: #928B3D;
+            color: $main-color;
             transition: background-color .2s ease,
             color .2s ease;
         }
         input:checked + label {
-            background-color: #928B3D;
+            background-color: $main-color;
             color: white;
         }
     }
@@ -98,10 +99,10 @@ ul.search-result-list{
         text-align: center;
         transition: background .2s ease,
         color .2s ease;
-        &.checked{
-            background: #EACE0A url('../img/checkmark.svg') center /23px 23px no-repeat;
-            color: white;
-        }
+    }
+    input.checked + label {
+        background: #EACE0A url('../img/checkmark.svg') center /23px 23px no-repeat;
+        color: white;
     }
     input:checked + label {
         //background: #EACE0A url('../img/checkmark.svg') center /23px 23px no-repeat;
@@ -222,11 +223,14 @@ footer{
         margin: 0 auto;
         align-items: center;
 
-        background-color: #928B3D;
+        background-color: $main-color;
         padding: .4rem 3rem;
         font-size:1rem;
         color: white;
         border: none;
         border-radius: 2rem ;
+        &.disabled{
+            background-color: #aaa!important;
+        }
     }
 }

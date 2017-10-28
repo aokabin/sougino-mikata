@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+//variables
+$main-color: #928B3D;
+
+//mixin
+@mixin input-decoration{
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: .4rem .6rem;
+    border: none;
+    box-sizing: border-box;
+}
+
+@mixin default-btn($bg-color:#F9B02D){
+    background-color: $bg-color;
+    display: inline-block;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: .4rem 0;
+    text-align: center;
+}
+
+@mixin header-common{
+    header{
+        padding: .8rem 0;
+        background-color: $main-color;
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+}

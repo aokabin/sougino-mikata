@@ -8,8 +8,8 @@ var search_data = {
          rate_star: 3,
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
-         is_checked: true,
-         detail_link: "https://www.google.co.jp"
+         is_checked: false,
+         detail_link: "plan-info.html"
 
       },{
          id: 2,
@@ -19,8 +19,8 @@ var search_data = {
          rate_star: 2,
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
-         is_checked: true,
-         detail_link: "https://www.google.co.jp"
+         is_checked: false,
+         detail_link: "plan-info.html"
       }
    ]
 };
@@ -51,7 +51,7 @@ var data = {
          subtitle: "こだわり納得プラン",
          price: "570,238円",
          rate_star: "★★★",
-         rate_opinion: "とても良い",
+         rate_evaluate: "とても良い",
          opinion_link: "",
          base: [
             "お棺", "ドライアイス", "車両", "装飾"
@@ -70,7 +70,7 @@ var data = {
          subtitle: "こだわり納得プラン",
          price: "570,238円",
          rate_star: "★★★",
-         rate_opinion: "とても良い",
+         rate_evaluate: "とても良い",
          opinion_link: "",
          base: [
             "お棺", "ドライアイス", "車両", "装飾"
@@ -100,14 +100,14 @@ var toYenPrice = function(price) {
 }
 
 var toRatingStar = function(rate) {
-   var stars = "";;
+   var stars = "";
    for(i=rate;i--;) stars += "★";
    return stars;
 }
 
 var objArraySort = function(ary, key, order) {
     var reverse = 1;
-    if(order && order.toLowerCase() == "desc") 
+    if(order && order.toLowerCase() == "desc")
         reverse = -1;
     ary.sort(function(a, b) {
         if(a[key] < b[key])
@@ -118,3 +118,4 @@ var objArraySort = function(ary, key, order) {
             return 1 * reverse;
     });
 }
+

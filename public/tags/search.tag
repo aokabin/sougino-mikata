@@ -15,13 +15,13 @@
                 <label for="radio-3">近い順</label>
             </li>
         </ul>
-    
+
         <section class="search-result">
             <ul class="search-result-list">
                 <li each={ companies }>
                     <div class="check-area">
-                        <input type="checkbox" name="select-item" id="select-item-1" value="1">
-                        <label for="select-item-1">&nbsp;</label>
+                        <input type="checkbox" name="select-item" id="select-item-{ id }" value={ id } onclick={ check }>
+                        <label for="select-item-{ id }">&nbsp;</label>
                     </div>
                     <div class="plan-info">
                         <div class="item-top-area">
@@ -56,8 +56,18 @@
         </section>
     </main>
 
+    <footer>
+        <button id="compare-btn" onclick="location.href='compare.html'" class={ can_compare? "" : "disabled" } disabled={ can_compare? "" : "disabled" }>
+            <i class="icon"></i>プランを比較
+        </button>
+    </footer>
+
   <script>
     this.companies = opts.companies
+
+    this.checked_companies = []
+
+    this.can_compare = false
 
     sort(e) {
         var sort_type = e.target.value
@@ -74,20 +84,29 @@
         }
     }
 
-    objArraySort(ary, key, order) {
-        var reverse = 1;
-        if(order && order.toLowerCase() == "desc") 
-            reverse = -1;
-        ary.sort(function(a, b) {
-            if(a[key] < b[key])
-                return -1 * reverse;
-            else if(a[key] == b[key])
-                return 0;
-            else
-                return 1 * reverse;
-        });
-    }
+    check(e) {
+        var company_id = e.target.value
+        this.companies = this.companies.filter(function(item, index){
+            if (item.id == company_id) {
+                item.is_checked = !item.is_checked
+            }
+            return true
+        })
+        console.log(this.companies)
 
+        var compares = this.companies.filter(function(item, index){
+            if (item.is_checked) {
+                return true
+            }
+        })
+
+        if (compares.length >= 2) {
+            this.can_compare = true
+        } else {
+            this.can_compare = false
+        }
+
+    }
 
   </script>
 
