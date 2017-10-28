@@ -20,8 +20,8 @@
             <ul class="search-result-list">
                 <li each={ companies }>
                     <div class="check-area">
-                        <input type="checkbox" name="select-item" id="select-item-1" value="1">
-                        <label for="select-item-1">&nbsp;</label>
+                        <input type="checkbox" name="select-item" id="select-item-{ id }" value={ id }>
+                        <label for="select-item-{ id }">&nbsp;</label>
                     </div>
                     <div class="plan-info">
                         <div class="item-top-area">
