@@ -3,8 +3,7 @@ box: debian
 build:
   steps:
     - script:
-        name: update apt 
-        code: sudo apt-get update && apt-get -y install curl
+        code: echo "Hello"
 
 deploy:
   steps:
