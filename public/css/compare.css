@@ -84,7 +84,6 @@ ul.search-param-list {
     background: url("../img/icon1.svg") center no-repeat; }
 
 .price-area {
-  flex: auto;
   padding-left: 2.2rem; }
   .price-area .price {
     color: #f98e00;
