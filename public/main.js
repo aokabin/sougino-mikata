@@ -8,7 +8,7 @@ var search_data = {
          rate_star: 3,
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
-         is_checked: true,
+         is_checked: false,
          detail_link: "plan-info.html"
 
       },{
@@ -19,7 +19,7 @@ var search_data = {
          rate_star: 2,
          rate_evaluate: "とても良い",
          opinion_link: "https://www.google.co.jp",
-         is_checked: true,
+         is_checked: false,
          detail_link: "plan-info.html"
       }
    ]
